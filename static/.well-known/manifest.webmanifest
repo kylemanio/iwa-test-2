@@ -3,13 +3,20 @@
   "scope": "/",
   "start_url": "/",
   "name": "IWA Windowing Example",
-  "version": "1.0.0",
+  "version": "1.0.3",
+  "update_manifest_url": "https://github.com/kylemanio/iwa-test/releases/latest/download/update_manifest.json",
   "display": "standalone",
   "display_override": ["borderless", "window-controls-overlay"],
   "permissions_policy": {
     "cross-origin-isolated": ["self"],
+    "direct-sockets": ["self"],
+    "controlled-frame": ["self"],
+    "all-screens-capture": ["self"],
     "window-management": ["self"],
-    "fullscreen": ["self"]
+    "usb-unrestricted": ["self"],
+    "fullscreen": ["self"],
+    "hid": ["self"],
+    "usb": ["self"]
   },
   "isolated_storage": true,
   "icons": [
