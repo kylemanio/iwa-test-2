@@ -2,9 +2,9 @@
   "id": "/",
   "scope": "/",
   "start_url": "/",
-  "name": "IWA Windowing Example",
-  "version": "1.0.3",
-  "update_manifest_url": "https://github.com/kylemanio/iwa-test/releases/latest/download/update_manifest.json",
+  "name": "IWA API Test",
+  "version": "1.0.0",
+  "update_manifest_url": "https://kylemanio.github.io/iwa-test-2/update_manifest.json",
   "display": "standalone",
   "display_override": ["borderless", "window-controls-overlay"],
   "permissions_policy": {
