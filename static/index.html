@@ -5,13 +5,29 @@
   <title>IWA Windowing Example</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./styles.css" />
+  <script src="./logger.js" defer></script>
   <script src="./index.js" defer></script>
+  <script src="./webhid.js" defer></script>
+  <script src="./webusb.js" defer></script>
   <!--To keep the manifest as it is instead of making it part of any bundles–->
   <!-- webpackIgnore: true -->
   <link rel="manifest" href="./.well-known/manifest.webmanifest">
 </head>
 <body>
+  <h3 class="header">WebHID Test</h3>
+  <button id="connect-webhid">Connect to HID Device</button>
+  <br />
+  <button id="disconnect-webhid" disabled>Disconnect HID Device</button>
+  <br />
+  <h3 class="header">WebHID Test</h3>
+  <input type="text" id="sendText" placeholder="Type message" />
+  <br />
+  <button id="connect-usb">Connect to USB Device</button>
+  <br />
+  <button id="disconnect-usb" disabled>Disconnect USB Device</button>
+
   <h3 class="header">IWA Windowing Example</h3>
+
   <div><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/display-mode">Display Mode</a>:</strong>
     <div class="displaymode-fullscreen">fullscreen</div>
     <div class="displaymode-standalone">standalone</div>
@@ -58,8 +74,8 @@
     </div>
   </div>
   <div><h3>Log</h3>
-    <div id="log" class="log"></div>
+    <ul id="logs" class="log"></ul>
   </div>
-  <div>(Source and hosting on <a href="https://github.com/michaelwasserman/iwa-windowing-example/">GitHub)</a>
+  <!-- <div>(Source and hosting on <a href="https://github.com/michaelwasserman/iwa-windowing-example/">GitHub)</a> -->
 </body>
 </html>

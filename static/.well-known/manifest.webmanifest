@@ -3,7 +3,7 @@
   "scope": "/",
   "start_url": "/",
   "name": "IWA API Test",
-  "version": "1.0.0",
+  "version": "1.0.9",
   "update_manifest_url": "https://kylemanio.github.io/iwa-test-2/update_manifest.json",
   "display": "standalone",
   "display_override": ["borderless", "window-controls-overlay"],

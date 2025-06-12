@@ -24,7 +24,7 @@ module.exports = async () => {
       new WebBundlePlugin({
         baseURL: new WebBundleId(key).serializeWithIsolatedWebAppOrigin(),
         static: { dir: path.resolve(__dirname, 'static') },
-        output: 'iwa-windowing-example.swbn',
+        output: 'iwa-test.swbn',
         integrityBlockSign: {
           strategy: new NodeCryptoSigningStrategy(key),
         },
